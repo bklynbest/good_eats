@@ -1,0 +1,11 @@
+
+<h4>Add a review:</h4>
+<%= form_for([@restaurant, @restaurant.menus.build]) do |f| %>
+  <p>
+    <%= f.label :body, "Menu" %>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit "Submit" %>
+  </p>
+  <% end %>
